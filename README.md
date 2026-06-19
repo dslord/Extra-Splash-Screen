@@ -1,6 +1,6 @@
-# Extra Splash Screen
+<div align="center"># Extra Splash Screen</div>
 
-### Purpose of the Project
+###  Purpose of the Project
 
 Many Windows users have numerous startup applications, background services, cloud synchronization tools, and other programs that launch immediately after logging in. On slower systems, or systems with a large number of startup applications, the desktop may appear before Windows has finished loading everything in the background.
 
@@ -16,7 +16,7 @@ This project was originally developed for exactly that reason: to avoid interact
 
 ---
 
-### What It Is
+### What it is?
 
 Windows Logon Splash Screen is a Python-based Windows customization utility that replaces the default desktop loading experience with a full-screen splash screen displayed immediately after user logon.
 
@@ -28,7 +28,7 @@ Users can customize the splash screen duration, background image, and deployment
 
 ---
 
-## Preview
+## 🖼️ Preview
 
 ### Loading Screen
 
@@ -40,7 +40,7 @@ Replace with your own screenshot.
 
 ---
 
-## Platform Compatibility
+## 🖥️ Platform Compatibility
 
 This project is designed exclusively for **Microsoft Windows**.
 
@@ -72,15 +72,13 @@ Because of these dependencies, the project is not supported on non-Windows opera
 
 ---
 
-## Features
-
+## ✨ Features 
 * Full-screen splash screen displayed after Windows logon
 * Custom background image support
 * Automatic Gaussian blur effect generation
 * Dynamic "Please wait..." loading screen
 * Animated indeterminate progress bar
-* Countdown timer display
-* Final "Almost done..." completion screen
+* Countdown timer display * Final "Almost done..." completion screen
 * Runs before Windows Explorer becomes visible
 * Automatically launches Windows user initialization process
 * Dark mode aware progress bar styling
@@ -89,7 +87,7 @@ Because of these dependencies, the project is not supported on non-Windows opera
 
 ---
 
-## Technologies Used
+## 🛠️ Technologies Used
 
 * Python
 * Tkinter
@@ -102,7 +100,7 @@ Because of these dependencies, the project is not supported on non-Windows opera
 
 ---
 
-## ⚠️ Important Warning
+## ⚠️ [!WARNING] Important Warning
 
 **Read this section carefully before installing.**
 
@@ -151,7 +149,7 @@ It is strongly recommended to keep a backup of your system or create a restore p
 
 ---
 
-## Requirements
+## 📋 Requirements
 
 Before using this project, users should have:
 
@@ -164,8 +162,11 @@ Before using this project, users should have:
 
 ---
 
+## 📂 Project Structure
 
-## Installation Guide
+---
+
+## 🚀 Installation Guide
 
 Follow the steps below carefully to install and configure the splash screen correctly.
 
@@ -358,7 +359,7 @@ If everything was configured correctly:
 
 ---
 
-### Changing the Duration Later
+## ⏳ Changing the Duration Later
 
 If you want to change the splash screen duration after installation:
 
@@ -370,7 +371,7 @@ If you want to change the splash screen duration after installation:
 
 The executable must be rebuilt every time the duration is changed because the value is compiled directly into the application.
 
-## For Developers/Contributors
+## 🔧 For Developers/Contributors
 
 For developers, contributors, and cautious users, the script includes a built-in testing mode.
 
@@ -466,7 +467,7 @@ This significantly reduces the risk of accidental desktop lockouts during develo
 
 ---
 
-## How It Works
+## 🧠 How It Works
 
 When Windows boots:
 
@@ -484,22 +485,20 @@ When Windows boots:
 
 ---
 
-## Changing The Duration Later
+## 🎯 Ideal Use Cases
 
-If you want to change the splash screen duration after installation:
+This project may be useful for:
 
-1. Open the original project folder.
-2. Open `main.pyw`.
-3. Edit the `actualTime` variable.
-4. Save the file.
-5. Rebuild the executable using the PyInstaller command.
-6. Replace the previously installed executable with the newly generated version.
-
-The executable must be rebuilt every time the duration value changes.
+* Systems with many startup applications
+* Older laptops and desktops
+* Workstations with heavy background software
+* Custom Windows deployments
+* Kiosk environments
+* Users who prefer waiting for a fully loaded desktop
 
 ---
 
-## Notes
+## 📝 Notes
 
 * Tested primarily on Windows systems.
 * Administrator privileges may be required.
@@ -510,16 +509,16 @@ The executable must be rebuilt every time the duration value changes.
 
 ---
 
-## Contributing
+## 🤝 Contributing
 
 Contributions are welcome. Feel free to fork the repository, improve the codebase, and submit a pull request.
 
 ---
 
-## License
+## 📄 License
 
 This project is provided for educational and customization purposes. Users assume all responsibility for installation, configuration, and system modifications performed while using this software.
 
 ---
 
-Developed by **dslord**.
+✨ Developed by **dslord**.

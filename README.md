@@ -36,7 +36,7 @@ Users can customize the splash screen duration, background image, and deployment
 
 ![Loading Screen](assets/loading-screen.png)
 
-### Small Timer At top-right corner
+### Small Timer At top-left corner
 
 ![Long press mouse button to reveal timer](assets/long-press.png)
 

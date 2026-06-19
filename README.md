@@ -1,4 +1,6 @@
-<div align="center"># Extra Splash Screen</div>
+<div align="center">
+ # Extra Splash Screen
+</div>
 
 ###  Purpose of the Project
 

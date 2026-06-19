@@ -1,5 +1,5 @@
 <div align="center">
- # Extra Splash Screen
+<h1>Extra Splash Screen</h1>
 </div>
 
 ###  Purpose of the Project
@@ -102,7 +102,7 @@ Because of these dependencies, the project is not supported on non-Windows opera
 
 ---
 
-## ⚠️ [!WARNING] Important Warning
+## ⚠️ Important WARNING
 
 **Read this section carefully before installing.**
 
@@ -165,6 +165,35 @@ Before using this project, users should have:
 ---
 
 ## 📂 Project Structure
+
+```text id="44f71q"
+Extra-Splash-Screen/
+│
+├── assets/
+│   ├── loading-screen.png
+│   └── completion-screen.png
+│
+├── README.md
+├── LICENSE
+├── requirements.txt
+├── main.pyw
+├── image.jpg
+└── Segoe.woff
+```
+
+### File Description
+
+| File / Folder                  | Purpose                                                                                      |
+| ------------------------------ | -------------------------------------------------------------------------------------------- |
+| `assets/`                      | Contains screenshots and other images used in the README                                     |
+| `assets/loading-screen.png`    | Preview image of the main splash screen                                                      |
+| `assets/completion-screen.png` | Preview image of the completion screen                                                       |
+| `main.pyw`                     | Main application source code responsible for the splash screen and Windows logon integration |
+| `image.jpg`                    | Custom background image displayed during the splash screen                                   |
+| `Segoe.woff`                   | Font file used by the splash screen text renderer                                            |
+| `requirements.txt`             | Python package dependencies required to build and run the project                            |
+| `LICENSE`                      | Project license information                                                                  |
+| `README.md`                    | Project documentation and installation guide                                                 |
 
 ---
 

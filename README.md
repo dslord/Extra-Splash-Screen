@@ -182,7 +182,8 @@ Extra-Splash-Screen/
 │
 ├── assets/
 │   ├── loading-screen.png
-│   └── completion-screen.png
+│   ├── completion-screen.png
+│   └── long-press.png
 │
 ├── README.md
 ├── LICENSE
@@ -195,10 +196,11 @@ Extra-Splash-Screen/
 ### File Description
 
 | File / Folder                  | Purpose                                                                                      |
-| ------------------------------ | -------------------------------------------------------------------------------------------- |
+| ------------------------------ | ---------------------------------------------------------------------------------------------|
 | `assets/`                      | Contains screenshots and other images used in the README                                     |
 | `assets/loading-screen.png`    | Preview image of the main splash screen                                                      |
 | `assets/completion-screen.png` | Preview image of the completion screen                                                       |
+| `assets/long-press.png`        | Preview image of timer at top-left corner of the screen on long press mouse button           |
 | `main.pyw`                     | Main application source code responsible for the splash screen and Windows logon integration |
 | `image.jpg`                    | Custom background image displayed during the splash screen                                   |
 | `Segoe.woff`                   | Font file used by the splash screen text renderer                                            |

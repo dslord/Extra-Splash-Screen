@@ -34,11 +34,11 @@ Users can customize the splash screen duration, background image, and deployment
 
 ### Loading Screen
 
-Replace with your own screenshot.
+![Loading Screen](assets/loading-screen.png)
 
 ### Completion Screen
 
-Replace with your own screenshot.
+![Completion Screen](assets/completion-screen.png)
 
 ---
 
@@ -148,6 +148,13 @@ Potential issues include:
 Always test the project thoroughly before deploying it on a production machine.
 
 It is strongly recommended to keep a backup of your system or create a restore point before installation.
+
+> [!CAUTION]
+> By using this project, you acknowledge that you understand the risks involved with modifying the Windows logon process. While the application includes safeguards and a dedicated TEST_MODE for safer testing, the author cannot guarantee compatibility with every system configuration.
+>
+> You are solely responsible for any changes made to your system, including registry modifications, startup configuration changes, or deployment mistakes. The author shall not be held responsible for any data loss, boot issues, system instability, desktop lockouts, configuration errors, or other problems that may arise from the use, misuse, modification, or improper installation of this software.
+>
+> You have been warned. Proceed only if you understand the installation process and are comfortable making changes to your Windows system.
 
 ---
 

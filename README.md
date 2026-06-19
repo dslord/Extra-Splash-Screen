@@ -1,6 +1,4 @@
-# Windows Logon Splash Screen
-
-# Windows Logon Splash Screen
+# Extra Splash Screen
 
 ### Purpose of the Project
 

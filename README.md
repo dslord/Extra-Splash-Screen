@@ -197,7 +197,6 @@ Extra-Splash-Screen/
 
 | File / Folder                  | Purpose                                                                                      |
 | ------------------------------ | ---------------------------------------------------------------------------------------------|
-| `assets/`                      | Contains screenshots and other images used in the README                                     |
 | `assets/loading-screen.png`    | Preview image of the main splash screen                                                      |
 | `assets/completion-screen.png` | Preview image of the completion screen                                                       |
 | `assets/long-press.png`        | Preview image of timer at top-left corner of the screen on long press mouse button           |

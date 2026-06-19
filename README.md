@@ -1,8 +1,32 @@
 # Windows Logon Splash Screen
 
-Windows Logon Splash Screen is a Python-based Windows customization utility that replaces the default desktop loading experience with a full-screen splash screen displayed immediately after user logon. The application shows a custom blurred background image, animated progress bar, countdown timer, and completion screen while Windows finishes loading the desktop environment.
+# Windows Logon Splash Screen
 
-The project was designed to simulate a polished operating system startup experience similar to modern enterprise deployment environments, OEM preload systems, and custom workstation setups. It allows users to define how long the splash screen remains visible while preventing accidental interaction with the desktop during the loading period.
+### Purpose of the Project
+
+Many Windows users have numerous startup applications, background services, cloud synchronization tools, and other programs that launch immediately after logging in. On slower systems, or systems with a large number of startup applications, the desktop may appear before Windows has finished loading everything in the background.
+
+This often results in an experience where the desktop becomes visible but is not yet fully responsive. Applications may still be launching, icons may still be loading, and overall system performance can feel sluggish for the first few minutes after logon.
+
+This project was created to solve that problem.
+
+Instead of immediately exposing the desktop, the script displays a Windows-style splash screen for a configurable amount of time while Windows continues loading startup applications and services in the background. By the time the splash screen disappears, the desktop is typically much closer to a fully usable state.
+
+The goal is not to make Windows boot faster, but rather to provide a cleaner and more polished logon experience for users who prefer waiting a few extra minutes in exchange for a desktop that is ready to use when it appears.
+
+This project was originally developed for exactly that reason: to avoid interacting with a partially loaded desktop and instead wait until Windows had enough time to finish loading startup applications and background processes.
+
+---
+
+### What It Is
+
+Windows Logon Splash Screen is a Python-based Windows customization utility that replaces the default desktop loading experience with a full-screen splash screen displayed immediately after user logon.
+
+The application displays a custom blurred background image, animated progress bar, countdown timer, and completion screen while Windows continues loading the desktop environment in the background.
+
+The project was designed to simulate a polished operating system startup experience similar to modern enterprise deployment environments, OEM preload systems, kiosk systems, and custom workstation setups.
+
+Users can customize the splash screen duration, background image, and deployment configuration to create a logon experience that better matches their workflow and system performance requirements.
 
 ---
 
@@ -15,6 +39,38 @@ Replace with your own screenshot.
 ### Completion Screen
 
 Replace with your own screenshot.
+
+---
+
+## Platform Compatibility
+
+This project is designed exclusively for **Microsoft Windows**.
+
+The main purpose of this script is to provide a better logon experience on Windows systems that require additional time to load startup applications, background services, cloud synchronization tools, and other processes after login.
+
+### Supported Platforms
+
+✔ Windows 10
+✔ Windows 11
+
+### Unsupported Platforms
+
+✖ Linux
+✖ macOS
+✖ ChromeOS
+✖ BSD-based operating systems
+
+### Why Windows Only?
+
+This project relies on Windows-specific components such as:
+
+* Windows Registry (`Winlogon`)
+* `userinit.exe`
+* Windows startup and logon mechanisms
+* Windows system directories (`C:\Windows\System32`)
+* Windows API calls through `ctypes`
+
+Because of these dependencies, the project is not supported on non-Windows operating systems and is not expected to function correctly outside of Windows.
 
 ---
 
@@ -101,6 +157,7 @@ It is strongly recommended to keep a backup of your system or create a restore p
 
 Before using this project, users should have:
 
+* Users should first estimate how long their system typically takes to finish loading startup applications, background services, cloud synchronization tools, and other programs after logging into Windows. This estimated duration should then be used when configuring the `actualTime` (Default value is 4.0) variable inside `main.pyw`. Choosing a value that is too low may result in the splash screen disappearing before the desktop is fully ready, while choosing a value that is too high may cause unnecessary waiting after the system has already finished loading.
 * Basic knowledge of Python
 * Basic understanding of Windows Registry
 * Basic understanding of the Windows logon process
@@ -119,8 +176,8 @@ Follow the steps below carefully to install and configure the splash screen corr
 Either clone the repository:
 
 ```bash
-git clone https://github.com/dslord/Windows-Logon-Splash-Screen.git
-cd Windows-Logon-Splash-Screen
+git clone https://github.com/dslord/Extra-Splash-Screen.git
+cd Extra-Splash-Screen
 ```
 
 Or download the ZIP archive directly from GitHub and extract it to a folder of your choice.
@@ -149,6 +206,7 @@ Open the `main.pyw` file using:
 * Any text editor of your choice
 
 Locate the following line:
+NOTE: The values are in minutes only.
 
 ```python
 actualTime = 4.0
